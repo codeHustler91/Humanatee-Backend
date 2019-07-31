@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  splash: 1
+  crash: 1
+  anon: false
+  users: one
+
+two:
+  content: MyString
+  splash: 1
+  crash: 1
+  anon: false
+  users: two
