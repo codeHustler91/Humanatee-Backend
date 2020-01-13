@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   get '/users/:id', to: 'users#show', as: 'users/id'
   get '/users/:id/friends', to: 'users#friends', as: 'users/id/friends'
   get '/posts', to: 'posts#index', as: 'posts'
-  get '/tasks', to: 'tasks#index', as: 'tasks'
+  post '/posts', to: 'posts#create'
   get '/tasks/:id', to: 'tasks#show', as: 'tasks/id'
+  post '/tasks', to: 'tasks#create'
+  get '/comments/:id', to: 'comments#show', as: 'comments/id'
+  post '/comments', to: 'comments#create'
 end

@@ -1,17 +1,18 @@
 class TasksController < ApplicationController
-  def index
-    @tasks = Task.all
-    render json: @tasks
-  end
 
   def show
     @task = Task.find(params[:id])
     render json: @task
   end
 
-  # private
-  # def allowed_params
-  #   params.require(:task).permit(:content)
-  # end
+  def create
+    @task = Task.create(allowed_params)
+    render json: @task
+  end
+  
+  private
+  def allowed_params
+      params.require(:task).permit(:user_id, :content)
+  end
 
 end
