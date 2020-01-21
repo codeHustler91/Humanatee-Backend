@@ -12,7 +12,7 @@ class TasksController < ApplicationController
   
   private
   def allowed_params
-      params.require(:task).permit(:user_id, :content)
+    params.require(:task).permit(:user_id, :content)
   end
 
 end

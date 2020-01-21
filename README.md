@@ -1,24 +1,6 @@
-# README
+# Humanatee Backend README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* This cutting edge social media website features a self referential user table which allows for users to 'have many' users as friends.
 
-Things you may want to cover:
+* more on that...
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
