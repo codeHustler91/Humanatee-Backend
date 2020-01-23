@@ -8,10 +8,10 @@ class CommentsController < ApplicationController
     def create
         @comment = Comment.create(allowed_params)
         render json: @comment
-    
+    end
+
     private
     def allowed_params
         params.require(:comment).permit(:post_id, :content)
     end
-  
 end

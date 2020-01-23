@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post '/posts', to: 'posts#create'
   get '/tasks/:id', to: 'tasks#show', as: 'tasks/id'
   post '/tasks', to: 'tasks#create'
-  get '/comments/:id', to: 'comments#show', as: 'comments/id'
+  get '/comments', to: 'comments#index', as: 'comments'
+  # get '/comments/:id', to: 'comments#show', as: 'comments/id'
   post '/comments', to: 'comments#create'
 end
