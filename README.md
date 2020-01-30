@@ -8,33 +8,28 @@ This RESTful backend is built with Ruby on Rails
 
 ![Friendship Model](./assets/FriendshipModel.png)
 
+### User Model
 
-### Model
-
-   ![User Model](./assets/UserModel.png)
-   Comments >--- Posts >--- User ---< Tasks
-        &&
-   User >--- User's (through friendships)
-
-   User has many posts, posts have many comments
-   User also has many tasks
+![User Model](./assets/UserModel.png)
 
 ### User profile data structure
 
-   * User profile object includes information on user's settings, posts to message board, each post's comments, user's tasks, and friendships.
-   ![User Serializer](./assets/UserSerializer.png)
+* User profile object includes information on user's settings, posts to message board, each post's comments, user's tasks, and friendships.
+* User's information was serialized using Netflix's FastJson
 
-   ![User Controller](./assets/UserControllerSerializer.png)
+![User Serializer](./assets/UserSerializer.png)
 
-User's information was serialized using Netflix's FastJson
+* User Controller show method
+
+![User Controller](./assets/UserControllerSerializer.png)
 
 ### Assets
-   * Ruby on Rails
-   * ActiveRecord
-   * Postgresql
-   * Fast JSON API
+* Ruby on Rails
+* ActiveRecord
+* Postgresql
+* Fast JSON API
 
 #### Credits
-   * Serialization : thanks to Fast JSON API
-      * [link to FastJson!](https://github.com/Netflix/fast_jsonapi)
-   * Thanks to Flatiron School for support
+* Serialization : thanks to Fast JSON API
+    * [link to FastJson!](https://github.com/Netflix/fast_jsonapi)
+* Thanks to Flatiron School for support
