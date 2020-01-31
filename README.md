@@ -2,9 +2,7 @@
 
 This RESTful backend is built with Ruby on Rails
 
-* This cutting edge social media website features a self referential user table which allows for users to 'have many' users as friends.
-
-* more on that...
+* This aquatic animal themed social media website features a self referential user table which allows the user class to have a relationship with itself, as friends
 
 ![Friendship Model](./assets/FriendshipModel.png)
 
